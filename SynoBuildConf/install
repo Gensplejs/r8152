@@ -24,10 +24,13 @@ create_package_tgz() {
 
 create_spk(){
 	local scripts_dir=$PKG_DIR/scripts
-
+	local conf_dir=$PKG_DIR/conf
 	### Copy package center scripts to PKG_DIR
 	mkdir -p $scripts_dir
 	cp -av scripts/* $scripts_dir
+        mkdir -p $conf_dir
+	cp -av conf/* $conf_dir
+
 
 	### Copy package icon
 	cp -av PACKAGE_ICON*.PNG $PKG_DIR
@@ -35,6 +38,7 @@ create_spk(){
 	### Generate INFO file
 	./INFO.sh > INFO
 	cp INFO $PKG_DIR/INFO
+	
 
 	### Create the final spk.
 	# pkg_make_spk <source path> <dest path> <spk file name>
