@@ -4,7 +4,7 @@
 source /pkgscripts-ng/include/pkg_util.sh
 
 package="r8152"
-version="2.14.0-8"
+version="2.14.0-11"
 os_min_ver="7.0-40000"
 displayname="RTL815X driver"
 maintainer="bb-qq (Beatskip Fork)"
