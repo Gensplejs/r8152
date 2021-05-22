@@ -1,5 +1,5 @@
-[日本語版はこちら](readme.ja.md)
-
+# DSM7.0 Beta version
+ 
 # DSM driver for realtek RTL8152/RTL8153/RTL8156 based USB Ethernet adapters
 
 This is a RTL8152/RTL8153/RTL8156 driver package for Synology NASes.
